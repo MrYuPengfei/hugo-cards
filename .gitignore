@@ -1,0 +1,22 @@
+# 🔴 核心忽略：Hugo静态生成目录（永不提交，重中之重）
+/public/
+
+# Hugo项目通用忽略
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# 系统文件忽略（Linux/Mac/Windows）
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# 编辑器配置忽略（VSCode/IDEA）
+.vscode/
+.idea/
+*.iml
+
+# Git临时文件
+.git/
