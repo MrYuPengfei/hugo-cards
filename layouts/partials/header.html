@@ -9,7 +9,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+      <!-- ✅ 核心修复：添加style属性，恢复「浅蓝色+原字号+加粗」，和你最初样式完全一致 -->
+      <a class="navbar-brand" href="{{ .Site.BaseURL }}" style="color: #428bca !important; font-size: 22px !important; font-weight: 600;">{{ .Site.Title }}</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -18,10 +19,10 @@
         <li><a href="{{ .Site.BaseURL }}pages/about/">About</a></li>
         <li><a href="{{ .Site.BaseURL }}pages/contact/">Contact</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download <span class="caret"></span></a>
+
+          <a href="{{ .Site.BaseURL }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a target="_blank" href="https://github.com/bul-ikana/hugo-cards">Project</a></li>
-            <li><a href="https://github.com/bul-ikana/hugo-cards.git">Download</a></li>
+            <li><a href="https://github.com/bul-ikana/hugo-cards.git">This Theme</a></li>
             <li role="separator" class="divider"></li>
             <li><a target="_blank" href="https://themes.gohugo.io/">More Themes</a></li>
           </ul>
