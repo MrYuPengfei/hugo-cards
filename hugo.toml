@@ -1,4 +1,5 @@
-baseURL = 'https://120.48.161.177'
+#baseURL = 'https://120.48.161.177'
+baseURL = 'https://blog.yupengfei.xyz'
 #baseURL = 'https://mryupengfei.github.io'
 languageCode = 'en-us'
 title = 'My Public Site'

@@ -3,7 +3,7 @@ title:  "The Internationale"
 img: karl-marx.jpg
 categories: ["one", "two"]
 date: "2026-01-01T20:49:37+08:00"
-
+draft: true
 ---
 
 Stand up, all victims of oppression
