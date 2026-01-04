@@ -1,0 +1,10 @@
+{{- /* 核心：仅目标域名允许Google索引，其他域名强制禁止 */ -}}
+{{- if eq .Site.BaseURL "https://mryupengfei.github.io/" -}}
+<!-- ✅ 目标域名：允许Google索引、跟随站内链接 -->
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+{{- else -}}
+<!-- ❌ 其他域名：强制禁止Google索引、禁止跟随链接，永不收录 -->
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet" />
+{{- end -}}
