@@ -4,7 +4,7 @@ baseURL = 'https://mryupengfei.github.io'
 #baseURL = 'https:/yupengfei.site'
 
 languageCode = 'en-us'
-title = 'My Public Site'
+title = "技术分享"
 theme = "hugo-cards"
 [pagination]
   pagerSize = 6
