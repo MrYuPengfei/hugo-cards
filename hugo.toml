@@ -51,8 +51,12 @@ theme = "hugo-cards"
     dev = "本地开发环境 | 技术分享 调试版 © 2026"
     prod = "技术分享 © 2026 | <a href='https://beian.miit.gov.cn/'>粤ICP备XXXXXXXX号-1</a> | 个人非盈利技术站点"
 
-# 开启sitemap自动生成（Hugo内置功能）
-enableRobotsTXT = true  # 同时生成robots.txt（关键）
+# ========== 关键：禁用自动生成，强制使用自定义robots.txt模板 ==========
+enableRobotsTXT = false  # ✅ 必须为false！否则覆盖自定义模板，文件生成失败
+buildDrafts = false
+buildFuture = false
+
+
 sitemap = "sitemap.xml"
 [sitemapconfig]
   changefreq = "weekly"  # 内容更新频率（个人博客建议weekly）
