@@ -1,7 +1,7 @@
 #baseURL = 'https://120.48.161.177'
 #baseURL = 'https:/yupengfei.xyz'
-#baseURL = 'https://mryupengfei.github.io'
-baseURL = 'https:/yupengfei.site'
+baseURL = 'https://mryupengfei.github.io'
+#baseURL = 'https:/yupengfei.site'
 
 languageCode = 'en-us'
 title = 'My Public Site'
