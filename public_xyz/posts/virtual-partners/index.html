@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Virtual Partners - My Public Site</title>
+<meta name="description" content="基于Qt的AI桌面伙伴 基于Qt6的桌面伴侣，可以在Windows10/11和支持X11的Linux发行版（例如Mint/Ubuntu）上使用。
+三种版本 版本一：基于PyQt5和PyGame的版本 （提供msi安装包，无内存溢出的风险）：
+https://gitee.com/yupengfei1074064684/yuanshen-desktoppet
+https://github.com/MrYuPengfei/yuanshen-desktoppet
+WindowsNT原神桌面宠物安装向导。附上百度网链接：
+通过百度网盘分享的文件：原神桌面宠物V1.7安装向导.exe 链接：https://pan.baidu.com/s/1ZLYbpay6syzQD8Mn4rHM9A?pwd=dey6
+版本二：基于版本一和Ollama人工智能模型的版本（由于AI服务器到期，目前暂停AI服务） （建议在Windows11，内存在16GB以上，的电脑上使用，无安装包）：
+https://gitee.com/yupengfei1074064684/LlamaVirtualPartners
+版本三（推荐)：基于Qt6的跨平台版本： （支持百度千帆大模型，可以在Windows11和Linux Mint Cinnamon Edition 上使用）：
+https://gitee.com/yupengfei1074064684/virtual-partners4-pc
+https://github.com/MrYuPengfei/VirtualPartners
+Windows11 提供支持windows11的安装向导：
+通过网盘分享的文件：原神主题桌面伙伴V2.0.1安装向导.exe 链接: https://pan.baidu.com/s/18anvnHh71icC85X15fQQDQ?pwd=vmu3 提取码: vmu3 &ndash;来自百度网盘超级会员v7的分享
+Linux Mint Cinnamon Edition 尚在更新中，暂不提供deb包，目前可现在QtCreater中调试。 自定义 可以手动添加你喜欢的动漫角色，将png图片和mp3资源导入安装目录即可。本项目默认提供原神主题，图片和音频来自互联网。
+"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https:/yupengfei.xyz/posts/virtual-partners/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="基于Qt的AI桌面伙伴 基于Qt6的桌面伴侣，可以在Windows10/11和支持X11的Linux发行版（例如Mint/Ubuntu）上使用。
+三种版本 版本一：基于PyQt5和PyGame的版本 （提供msi安装包，无内存溢出的风险）：
+https://gitee.com/yupengfei1074064684/yuanshen-desktoppet
+https://github.com/MrYuPengfei/yuanshen-desktoppet
+WindowsNT原神桌面宠物安装向导。附上百度网链接：
+通过百度网盘分享的文件：原神桌面宠物V1.7安装向导.exe 链接：https://pan.baidu.com/s/1ZLYbpay6syzQD8Mn4rHM9A?pwd=dey6
+版本二：基于版本一和Ollama人工智能模型的版本（由于AI服务器到期，目前暂停AI服务） （建议在Windows11，内存在16GB以上，的电脑上使用，无安装包）：
+https://gitee.com/yupengfei1074064684/LlamaVirtualPartners
+版本三（推荐)：基于Qt6的跨平台版本： （支持百度千帆大模型，可以在Windows11和Linux Mint Cinnamon Edition 上使用）：
+https://gitee.com/yupengfei1074064684/virtual-partners4-pc
+https://github.com/MrYuPengfei/VirtualPartners
+Windows11 提供支持windows11的安装向导：
+通过网盘分享的文件：原神主题桌面伙伴V2.0.1安装向导.exe 链接: https://pan.baidu.com/s/18anvnHh71icC85X15fQQDQ?pwd=vmu3 提取码: vmu3 &ndash;来自百度网盘超级会员v7的分享
+Linux Mint Cinnamon Edition 尚在更新中，暂不提供deb包，目前可现在QtCreater中调试。 自定义 可以手动添加你喜欢的动漫角色，将png图片和mp3资源导入安装目录即可。本项目默认提供原神主题，图片和音频来自互联网。
+" />
+<meta name="twitter:title" content="Virtual Partners - My Public Site" />
+<meta name="twitter:site" content="" />
+<meta name="twitter:creator" content="" />
+
+
+<meta property="og:type" content="article" />
+<meta content="Virtual Partners - My Public Site" property="og:title">
+<meta content="基于Qt的AI桌面伙伴 基于Qt6的桌面伴侣，可以在Windows10/11和支持X11的Linux发行版（例如Mint/Ubuntu）上使用。
+三种版本 版本一：基于PyQt5和PyGame的版本 （提供msi安装包，无内存溢出的风险）：
+https://gitee.com/yupengfei1074064684/yuanshen-desktoppet
+https://github.com/MrYuPengfei/yuanshen-desktoppet
+WindowsNT原神桌面宠物安装向导。附上百度网链接：
+通过百度网盘分享的文件：原神桌面宠物V1.7安装向导.exe 链接：https://pan.baidu.com/s/1ZLYbpay6syzQD8Mn4rHM9A?pwd=dey6
+版本二：基于版本一和Ollama人工智能模型的版本（由于AI服务器到期，目前暂停AI服务） （建议在Windows11，内存在16GB以上，的电脑上使用，无安装包）：
+https://gitee.com/yupengfei1074064684/LlamaVirtualPartners
+版本三（推荐)：基于Qt6的跨平台版本： （支持百度千帆大模型，可以在Windows11和Linux Mint Cinnamon Edition 上使用）：
+https://gitee.com/yupengfei1074064684/virtual-partners4-pc
+https://github.com/MrYuPengfei/VirtualPartners
+Windows11 提供支持windows11的安装向导：
+通过网盘分享的文件：原神主题桌面伙伴V2.0.1安装向导.exe 链接: https://pan.baidu.com/s/18anvnHh71icC85X15fQQDQ?pwd=vmu3 提取码: vmu3 &ndash;来自百度网盘超级会员v7的分享
+Linux Mint Cinnamon Edition 尚在更新中，暂不提供deb包，目前可现在QtCreater中调试。 自定义 可以手动添加你喜欢的动漫角色，将png图片和mp3资源导入安装目录即可。本项目默认提供原神主题，图片和音频来自互联网。
+" property="og:description">
+<meta property="og:url" content="https:/yupengfei.xyz/posts/virtual-partners/" />
+<meta property="og:site_name" content="My Public Site" />
+<meta property="article:section" content="one" /><meta property="article:section" content="two" />
+<meta property="article:published_time" content="2025-03-01 20:49:37 &#43;0800 CST" />
+
+
+
+
+
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org", 
+    "@type": "BlogPosting",
+    "headline": "Virtual Partners",
+    "genre": "onetwo",  
+    "url": "https:\/yupengfei.xyz\/posts\/virtual-partners\/",
+    "datePublished": "2025-03-01 20:49:37 \u002b0800 CST",
+    "description": "基于Qt的AI桌面伙伴 基于Qt6的桌面伴侣，可以在Windows10\/11和支持X11的Linux发行版（例如Mint\/Ubuntu）上使用。\n三种版本 版本一：基于PyQt5和PyGame的版本 （提供msi安装包，无内存溢出的风险）：\nhttps:\/\/gitee.com\/yupengfei1074064684\/yuanshen-desktoppet\nhttps:\/\/github.com\/MrYuPengfei\/yuanshen-desktoppet\nWindowsNT原神桌面宠物安装向导。附上百度网链接：\n通过百度网盘分享的文件：原神桌面宠物V1.7安装向导.exe 链接：https:\/\/pan.baidu.com\/s\/1ZLYbpay6syzQD8Mn4rHM9A?pwd=dey6\n版本二：基于版本一和Ollama人工智能模型的版本（由于AI服务器到期，目前暂停AI服务） （建议在Windows11，内存在16GB以上，的电脑上使用，无安装包）：\nhttps:\/\/gitee.com\/yupengfei1074064684\/LlamaVirtualPartners\n版本三（推荐)：基于Qt6的跨平台版本： （支持百度千帆大模型，可以在Windows11和Linux Mint Cinnamon Edition 上使用）：\nhttps:\/\/gitee.com\/yupengfei1074064684\/virtual-partners4-pc\nhttps:\/\/github.com\/MrYuPengfei\/VirtualPartners\nWindows11 提供支持windows11的安装向导：\n通过网盘分享的文件：原神主题桌面伙伴V2.0.1安装向导.exe 链接: https:\/\/pan.baidu.com\/s\/18anvnHh71icC85X15fQQDQ?pwd=vmu3 提取码: vmu3 \u0026ndash;来自百度网盘超级会员v7的分享\nLinux Mint Cinnamon Edition 尚在更新中，暂不提供deb包，目前可现在QtCreater中调试。 自定义 可以手动添加你喜欢的动漫角色，将png图片和mp3资源导入安装目录即可。本项目默认提供原神主题，图片和音频来自互联网。\n",
+    "author": {
+        "@type": "Person",
+        "name": ""
+    }
+ }
+</script>
+
+
+
+
+<link rel="stylesheet" href="/yupengfei.xyz/sass/main.css">
+
+
+
+
+<link rel="stylesheet" href="https:/yupengfei.xyz/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/custom.css">
+</head>
+
+
+<body>
+
+<header class="site-header">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="https:/yupengfei.xyz/" style="color: #428bca !important; font-size: 22px !important; font-weight: 600;">My Public Site</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+        <li><a href="https:/yupengfei.xyz/pages/about/">About</a></li>
+        <li><a href="https:/yupengfei.xyz/pages/contact/">Contact</a></li>
+        <li><a href="https:/yupengfei.xyz/pages/blog/">Blog</a></li>
+
+        <li class="dropdown">
+
+          <a href="https:/yupengfei.xyz/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https:/yupengfei.xyz/pages/this-theme">This Theme</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a target="_blank" href="https:/yupengfei.xyz/pages/more-themes/">More Themes</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+<div class="container">
+  <div class="wrapper">
+    
+<div class="row main-body">
+<div class="col-md-8 post-wrapper">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+          <header class="post-header post-header-base">
+            <h1 class="post-title" itemprop="name headline">Virtual Partners</h1>
+            
+            <p class="post-meta"><time datetime='2025-03-01T20:49:37&#43;08:00' itemprop="datePublished">March 1, 2025</time></p>
+            
+                 
+          </header>
+
+          <div class="post-content" itemprop="articleBody">
+            <h1 id="基于qt的ai桌面伙伴">基于Qt的AI桌面伙伴</h1>
+<p>基于Qt6的桌面伴侣，可以在Windows10/11和支持X11的Linux发行版（例如Mint/Ubuntu）上使用。</p>
+<h1 id="三种版本">三种版本</h1>
+<h2 id="版本一基于pyqt5和pygame的版本">版本一：基于PyQt5和PyGame的版本</h2>
+<p>（提供msi安装包，无内存溢出的风险）：</p>
+<p><a href="https://gitee.com/yupengfei1074064684/yuanshen-desktoppet">https://gitee.com/yupengfei1074064684/yuanshen-desktoppet</a></p>
+<p><a href="https://github.com/MrYuPengfei/yuanshen-desktoppet">https://github.com/MrYuPengfei/yuanshen-desktoppet</a></p>
+<p>WindowsNT原神桌面宠物安装向导。附上百度网链接：</p>
+<p>通过百度网盘分享的文件：原神桌面宠物V1.7安装向导.exe 链接：https://pan.baidu.com/s/1ZLYbpay6syzQD8Mn4rHM9A?pwd=dey6</p>
+<h2 id="版本二基于版本一和ollama人工智能模型的版本由于ai服务器到期目前暂停ai服务">版本二：基于版本一和Ollama人工智能模型的版本（由于AI服务器到期，目前暂停AI服务）</h2>
+<p>（建议在Windows11，内存在16GB以上，的电脑上使用，无安装包）：</p>
+<p><a href="https://gitee.com/yupengfei1074064684/LlamaVirtualPartners">https://gitee.com/yupengfei1074064684/LlamaVirtualPartners</a></p>
+<p><img src="ai-pet.jpg" alt="ai-pet"></p>
+<h2 id="版本三推荐基于qt6的跨平台版本">版本三（推荐)：基于Qt6的跨平台版本：</h2>
+<p>（支持百度千帆大模型，可以在Windows11和Linux Mint Cinnamon Edition 上使用）：</p>
+<p><a href="https://gitee.com/yupengfei1074064684/virtual-partners4-pc">https://gitee.com/yupengfei1074064684/virtual-partners4-pc</a></p>
+<p><a href="https://github.com/MrYuPengfei/VirtualPartners">https://github.com/MrYuPengfei/VirtualPartners</a></p>
+<h2 id="windows11">Windows11</h2>
+<p>提供支持windows11的安装向导：</p>
+<p>通过网盘分享的文件：原神主题桌面伙伴V2.0.1安装向导.exe 链接: <a href="https://pan.baidu.com/s/18anvnHh71icC85X15fQQDQ?pwd=vmu3">https://pan.baidu.com/s/18anvnHh71icC85X15fQQDQ?pwd=vmu3</a> 提取码: vmu3 &ndash;来自百度网盘超级会员v7的分享</p>
+<p><img src="virtual-partners.jpg" alt="virtual-partners.jpg"></p>
+<h2 id="linux-mint-cinnamon-edition">Linux Mint Cinnamon Edition</h2>
+<p>尚在更新中，暂不提供deb包，目前可现在QtCreater中调试。
+<img src="mint-qt.jpg" alt="mint-qt"></p>
+<h1 id="自定义">自定义</h1>
+<p>可以手动添加你喜欢的动漫角色，将png图片和mp3资源导入安装目录即可。本项目默认提供原神主题，图片和音频来自互联网。</p>
+
+          </div>
+
+    </article>
+    <div class="row">
+        
+    </div>
+    
+    <div class="row">
+            <ul class="pager">
+             
+                    <li><a class="next" href="https:/yupengfei.xyz/posts/about-this-site/">&laquo; About This Site</a></li>
+              
+              
+                <li><a class="previous" href="https:/yupengfei.xyz/pages/blog/"> &raquo;</a></li>
+              
+            </ul>
+    </div>
+</div>
+
+
+    <div class="col-md-4 mt20">
+        <div class="post-img">
+            
+            
+              
+                <img width="100%" src="/yupengfei.xyz/posts/virtual-partners/paimen.jpeg" alt="paimen.jpeg">
+              
+            
+            
+        </div>
+            
+        
+        <div class="mt10 recent">
+            <h2>Recent articles</h2>
+             <ul>
+                
+
+                      <li>
+                      <p><a href="https:/yupengfei.xyz/posts/about/">About Me</a><small>&nbsp;&nbsp;January 1, 2026</small></p>
+                      </li>
+
+                
+
+                      <li>
+                      <p><a href="https:/yupengfei.xyz/posts/about-this-site/">About This Site</a><small>&nbsp;&nbsp;January 1, 2026</small></p>
+                      </li>
+
+                
+
+                      <li>
+                      <p><a href="https:/yupengfei.xyz/posts/virtual-partners/">Virtual Partners</a><small>&nbsp;&nbsp;March 1, 2025</small></p>
+                      </li>
+
+                
+              </ul>
+        </div>
+        
+        <br>
+
+</div>
+
+
+</div>
+
+
+
+
+  </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row p20">
+            
+                <div class="col-md-4 text-center mt25">All rights reserved by <a target="_blank" href="https://mryupengfei.github.io">Yu Pengfei (于鹏飞)</a></div>
+            
+
+            <div class="col-md-4 text-center mt25">
+
+
+
+               
+                <a target="_blank" href="https://github.com/MrYuPengfei"><li class="social github"><i class="fa fa-github-square"></i></li></a>
+                
+
+
+
+            </div>
+
+        </div> 
+    </div>
+</footer>
+
+
+
+<link rel="stylesheet" href="https:/yupengfei.xyz/css/bootstrap.min.css">
+
+<script src="https:/yupengfei.xyz/js/jquery.min.js"></script>
+
+<script src="https:/yupengfei.xyz/js/bootstrap.min.js"></script>
+
+  
+ 
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</body>
+
+</html>

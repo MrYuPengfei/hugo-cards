@@ -1,6 +1,7 @@
 # 🔴 核心忽略：Hugo静态生成目录（永不提交，重中之重）
 /public/
-
+/public_xyz/
+/public_site/
 # Hugo项目通用忽略
 /resources/_gen/
 /assets/jsconfig.json

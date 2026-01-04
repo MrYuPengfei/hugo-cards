@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Two on My Public Site</title>
+    <link>https:/yupengfei.xyz/categories/two/</link>
+    <description>Recent content in Two on My Public Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>mr_yupengfei@foxmail.com (MrYuPengfei)</managingEditor>
+    <webMaster>mr_yupengfei@foxmail.com (MrYuPengfei)</webMaster>
+    <lastBuildDate>Thu, 01 Jan 2026 20:49:47 +0800</lastBuildDate>
+    <atom:link href="https:/yupengfei.xyz/categories/two/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>https:/yupengfei.xyz/posts/about/</link>
+      <pubDate>Thu, 01 Jan 2026 20:49:47 +0800</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
+      <guid>https:/yupengfei.xyz/posts/about/</guid>
+      <description>&lt;h3 id=&#34;github&#34;&gt;Github&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/mryupengfei&#34;&gt;https://github.com/mryupengfei&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mryupengfei.github.io&#34;&gt;https://mryupengfei.github.io&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;gitee&#34;&gt;Gitee&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gitee.com/yupengfei1074064684&#34;&gt;https://gitee.com/yupengfei1074064684&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Virtual Partners</title>
+      <link>https:/yupengfei.xyz/posts/virtual-partners/</link>
+      <pubDate>Sat, 01 Mar 2025 20:49:37 +0800</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
+      <guid>https:/yupengfei.xyz/posts/virtual-partners/</guid>
+      <description>&lt;h1 id=&#34;基于qt的ai桌面伙伴&#34;&gt;基于Qt的AI桌面伙伴&lt;/h1&gt;&#xA;&lt;p&gt;基于Qt6的桌面伴侣，可以在Windows10/11和支持X11的Linux发行版（例如Mint/Ubuntu）上使用。&lt;/p&gt;&#xA;&lt;h1 id=&#34;三种版本&#34;&gt;三种版本&lt;/h1&gt;&#xA;&lt;h2 id=&#34;版本一基于pyqt5和pygame的版本&#34;&gt;版本一：基于PyQt5和PyGame的版本&lt;/h2&gt;&#xA;&lt;p&gt;（提供msi安装包，无内存溢出的风险）：&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gitee.com/yupengfei1074064684/yuanshen-desktoppet&#34;&gt;https://gitee.com/yupengfei1074064684/yuanshen-desktoppet&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/MrYuPengfei/yuanshen-desktoppet&#34;&gt;https://github.com/MrYuPengfei/yuanshen-desktoppet&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;WindowsNT原神桌面宠物安装向导。附上百度网链接：&lt;/p&gt;&#xA;&lt;p&gt;通过百度网盘分享的文件：原神桌面宠物V1.7安装向导.exe 链接：https://pan.baidu.com/s/1ZLYbpay6syzQD8Mn4rHM9A?pwd=dey6&lt;/p&gt;&#xA;&lt;h2 id=&#34;版本二基于版本一和ollama人工智能模型的版本由于ai服务器到期目前暂停ai服务&#34;&gt;版本二：基于版本一和Ollama人工智能模型的版本（由于AI服务器到期，目前暂停AI服务）&lt;/h2&gt;&#xA;&lt;p&gt;（建议在Windows11，内存在16GB以上，的电脑上使用，无安装包）：&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gitee.com/yupengfei1074064684/LlamaVirtualPartners&#34;&gt;https://gitee.com/yupengfei1074064684/LlamaVirtualPartners&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;ai-pet.jpg&#34; alt=&#34;ai-pet&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;版本三推荐基于qt6的跨平台版本&#34;&gt;版本三（推荐)：基于Qt6的跨平台版本：&lt;/h2&gt;&#xA;&lt;p&gt;（支持百度千帆大模型，可以在Windows11和Linux Mint Cinnamon Edition 上使用）：&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gitee.com/yupengfei1074064684/virtual-partners4-pc&#34;&gt;https://gitee.com/yupengfei1074064684/virtual-partners4-pc&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/MrYuPengfei/VirtualPartners&#34;&gt;https://github.com/MrYuPengfei/VirtualPartners&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;windows11&#34;&gt;Windows11&lt;/h2&gt;&#xA;&lt;p&gt;提供支持windows11的安装向导：&lt;/p&gt;&#xA;&lt;p&gt;通过网盘分享的文件：原神主题桌面伙伴V2.0.1安装向导.exe 链接: &lt;a href=&#34;https://pan.baidu.com/s/18anvnHh71icC85X15fQQDQ?pwd=vmu3&#34;&gt;https://pan.baidu.com/s/18anvnHh71icC85X15fQQDQ?pwd=vmu3&lt;/a&gt; 提取码: vmu3 &amp;ndash;来自百度网盘超级会员v7的分享&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;virtual-partners.jpg&#34; alt=&#34;virtual-partners.jpg&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;linux-mint-cinnamon-edition&#34;&gt;Linux Mint Cinnamon Edition&lt;/h2&gt;&#xA;&lt;p&gt;尚在更新中，暂不提供deb包，目前可现在QtCreater中调试。&#xA;&lt;img src=&#34;mint-qt.jpg&#34; alt=&#34;mint-qt&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;自定义&#34;&gt;自定义&lt;/h1&gt;&#xA;&lt;p&gt;可以手动添加你喜欢的动漫角色，将png图片和mp3资源导入安装目录即可。本项目默认提供原神主题，图片和音频来自互联网。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
