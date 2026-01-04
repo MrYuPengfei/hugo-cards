@@ -1,1 +1,11 @@
 /*Add your custom css here. This will override any existinc thems css*/
+/* Add your custom css here. This will override any existing theme css */
+/* 全局图片自适应：适配手机/电脑，永不溢出、不变形、自动居中 | 强制生效 */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 12px auto !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}

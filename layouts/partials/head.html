@@ -5,8 +5,12 @@
 
 <title>{{ .Title}}{{if .IsPage}} - {{.Site.Title}}{{ end }}</title>
 {{partial "seo.html" .}}
+<!-- ✅ 引入 assets 目录下的 custom.css -->
 
 {{ $main := resources.Get "sass/main.scss" | toCSS (dict "outputStyle" "compressed")}}
+
+{{ $css := resources.Get "css/custom.css" | minify }}
+
 <link rel="stylesheet" href="{{ $main.RelPermalink }}">
 
 <!-- Sidebar Profile -->

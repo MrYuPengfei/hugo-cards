@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+
 {{ partial "head.html" .}}
 
 <body>
@@ -21,6 +22,11 @@
 <script src="{{ .Site.BaseURL }}js/jquery.min.js"></script>
 <!-- ✅ 3. 引入本地Bootstrap JS（下拉框核心驱动） -->
 <script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/custom.css">
+
+
 {{ with .Site.Params.analytics }}
   {{ partial "analytics.html" . }}
 {{ end }}
