@@ -46,3 +46,18 @@ theme = "hugo-cards"
     name = "MrYuPengfei"       # 你的作者名
     email = "mr_yupengfei@foxmail.com"  # 你的邮箱
     url = "https://github.com/MrYuPengfei"  # 你的个人链接
+  cacheBust = true  # 静态资源缓存优化
+  [params.footer]
+    dev = "本地开发环境 | 技术分享 调试版 © 2026"
+    prod = "技术分享 © 2026 | <a href='https://beian.miit.gov.cn/'>粤ICP备XXXXXXXX号-1</a> | 个人非盈利技术站点"
+
+# 开启sitemap自动生成（Hugo内置功能）
+enableRobotsTXT = true  # 同时生成robots.txt（关键）
+sitemap = "sitemap.xml"
+[sitemapconfig]
+  changefreq = "weekly"  # 内容更新频率（个人博客建议weekly）
+  priority = 0.7         # 站点优先级（0-1，0.7为中等偏上）
+# 编辑config.toml，开启压缩和缓存
+[minify]
+  enable = true  # 压缩HTML/CSS/JS，提速30%+
+
