@@ -16,6 +16,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+        {{ if in .Site.BaseURL "yupengfei.site" }}
+        {{/* ✅ 匹配线上域名(yupengfei.xyz) - 显示合规ICP备案声明 */}}
+        <li><a href="{{ .Site.BaseURL }}pages/legal/">Legal</a></li>
+
+        {{ end }}
         <li><a href="{{ .Site.BaseURL }}pages/about/">About</a></li>
         <li><a href="{{ .Site.BaseURL }}pages/contact/">Contact</a></li>
         <li><a href="{{ .Site.BaseURL }}pages/blog/">Blog</a></li>

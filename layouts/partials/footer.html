@@ -1,54 +1,107 @@
-<footer>
-    <div class="container">
-        <div class="row p20">
-            {{ with .Site.Params.copyright }}
-                <div class="col-md-4 text-center mt25">All rights reserved by <a target="_blank" href="{{ .link }}">{{ .name }}</a></div>
-            {{ end }}
+<!--<footer class="navbar navbar-default navbar-fixed-bottom">-->
+<!--    <div class="container">-->
+<!--        <div class="row p20">-->
+<!--&lt;!&ndash;            {{ with .Site.Params.copyright }}&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-md-4 text-center mt25">All rights reserved by <a target="_blank" href="{{ .link }}">{{ .name }}</a></div>&ndash;&gt;-->
+<!--&lt;!&ndash;            {{ end }}&ndash;&gt;-->
 
-            <div class="col-md-4 text-center mt25">
-<!--               {{ with .Site.Params.facebook }}-->
-<!--                <a target="_blank" href="{{.}}"><li class="social facebook"><i class="fa fa-facebook-square"></i></li></a> -->
-<!--                {{ end }}-->
-<!--               {{with  .Site.Params.quora }}-->
-<!--                <a target="_blank" href="{{.}}"><li class="social quora"><i class="fa fa-quora"></i></li></a>-->
-<!--                {{ end }}-->
-<!--               {{with  .Site.Params.twitter }}-->
-<!--                <a target="_blank" href="{{.}}"><li class="social twitter"><i class="fa fa-twitter-square"></i></li></a>-->
-<!--                {{ end }}-->
-               {{with  .Site.Params.github }}
-                <a target="_blank" href="{{.}}"><li class="social github"><i class="fa fa-github-square"></i></li></a>
-                {{ end }}
-<!--               {{with  .Site.Params.email }}-->
-<!--                <a target="_blank" href="mailto:{{.}}"><li class="social email"><i class="fa fa-envelope"></i></li></a>-->
-<!--                {{ end }}-->
-            </div>
+<!--            <div class="col-md-4 text-center mt25">-->
+<!--&lt;!&ndash;               {{ with .Site.Params.facebook }}&ndash;&gt;-->
+<!--&lt;!&ndash;                <a target="_blank" href="{{.}}"><li class="social facebook"><i class="fa fa-facebook-square"></i></li></a> &ndash;&gt;-->
+<!--&lt;!&ndash;                {{ end }}&ndash;&gt;-->
+<!--&lt;!&ndash;               {{with  .Site.Params.quora }}&ndash;&gt;-->
+<!--&lt;!&ndash;                <a target="_blank" href="{{.}}"><li class="social quora"><i class="fa fa-quora"></i></li></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                {{ end }}&ndash;&gt;-->
+<!--&lt;!&ndash;               {{with  .Site.Params.twitter }}&ndash;&gt;-->
+<!--&lt;!&ndash;                <a target="_blank" href="{{.}}"><li class="social twitter"><i class="fa fa-twitter-square"></i></li></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                {{ end }}&ndash;&gt;-->
+<!--&lt;!&ndash;               {{with  .Site.Params.github }}&ndash;&gt;-->
+<!--&lt;!&ndash;                <a target="_blank" href="{{.}}"><li class="social github"><i class="fa fa-github-square"></i></li></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                {{ end }}&ndash;&gt;-->
+<!--&lt;!&ndash;               {{with  .Site.Params.email }}&ndash;&gt;-->
+<!--&lt;!&ndash;                <a target="_blank" href="mailto:{{.}}"><li class="social email"><i class="fa fa-envelope"></i></li></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                {{ end }}&ndash;&gt;-->
 
-            {{/* ========== 核心：模糊匹配域名 + localhost，逻辑完整无错 ========== */}}
-            {{ if in .Site.BaseURL "yupengfei.xyz" }}
-            {{/* ✅ 匹配线上域名(yupengfei.xyz) - 显示合规ICP备案声明 */}}
-            <div class="col-md-4 text-center mt25">
-                <p style="font-size:12px; color:#999; margin:0; padding:0;">
-                    <a href="https://beian.miit.gov.cn/" target="_blank" style="color:#999; text-decoration:none;">
-                        粤ICP备XXXXXXXX号-1
-                    </a> | 个人非盈利技术站点，无商业内容
-                </p>
-            </div>
-            {{ else if in .Site.BaseURL "localhost" }}
-            {{/* ✅ 匹配本地环境(localhost) - 显示开发声明，无备案信息 */}}
-            <div class="col-md-4 text-center mt25">
-                <p style="font-size:12px; color:#999; margin:0; padding:0;">
-                    本地开发环境 | 个人技术学习记录
-                </p>
-            </div>
-            {{ else }}
-            {{/* ✅ 兜底方案(其他未知环境) - 极简合规声明，无风险 */}}
-            <div class="col-md-4 text-center mt25">
-                <p style="font-size:12px; color:#999; margin:0; padding:0;">
-                    个人非盈利技术站点 | 仅限技术学习与记录
-                </p>
-            </div>
-            {{ end }}
+<!--               {{with  .Site.Params.orcid }}-->
+<!--                <a-->
+<!--                        id="cy-effective-orcid-url"-->
+<!--                        class="underline"-->
+<!--                        href="https://orcid.org/{{.}}"-->
+<!--                        target="orcid.widget"-->
+<!--                        rel="me noopener noreferrer"-->
+<!--                        style="vertical-align: top">-->
+<!--                    <img-->
+<!--                            src="https://orcid.org/sites/default/files/images/orcid_16x16.png"-->
+<!--                            style="width: 1em; margin-inline-start: 0.5em"-->
+<!--                            alt="ORCID iD icon"/>-->
+<!--                    https://orcid.org/{{.}}-->
+<!--                </a>-->
+<!--                {{ end }}-->
+<!--            </div>-->
 
-        </div> 
+<!--            {{/* ========== 核心：模糊匹配域名 + localhost，逻辑完整无错 ========== */}}-->
+<!--            {{ if in .Site.BaseURL "yupengfei.site" }}-->
+<!--            {{/* ✅ 匹配线上域名(yupengfei.xyz) - 显示合规ICP备案声明 */}}-->
+<!--            <div class="col-md-4 text-center mt25">-->
+<!--                <p style="font-size:12px; color:#999; margin:0; padding:0;">-->
+<!--                    <a href="https://beian.miit.gov.cn/" target="_blank" style="color:#999; text-decoration:none;">-->
+<!--                        晋ICP备2026000124号-1-->
+<!--                    </a> | 个人非盈利技术站点，无商业内容-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            {{ else if in .Site.BaseURL "localhost" }}-->
+<!--            {{/* ✅ 匹配本地环境(localhost) - 显示开发声明，无备案信息 */}}-->
+<!--            <div class="col-md-4 text-center mt25">-->
+<!--                <p style="font-size:12px; color:#999; margin:0; padding:0;">-->
+<!--                    本地开发环境 | 个人技术学习记录-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            {{ else }}-->
+<!--            {{/* ✅ 兜底方案(其他未知环境) - 极简合规声明，无风险 */}}-->
+<!--            <div class="col-md-4 text-center mt25">-->
+<!--                <p style="font-size:12px; color:#999; margin:0; padding:0;">-->
+<!--                    个人非盈利技术站点 | 仅限技术学习与记录-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            {{ end }}-->
+
+<!--        </div> -->
+<!--    </div>-->
+<!--</footer>-->
+<footer class="navbar navbar-default navbar-fixed-bottom">
+
+    {{/* ========== 核心：模糊匹配域名 + localhost，逻辑完整无错 ========== */}}
+    {{ if in .Site.BaseURL "yupengfei.site" }}
+    {{/* ✅ 匹配线上域名(yupengfei.xyz) - 显示合规ICP备案声明 */}}
+    <div class="col-md-4 text-center mt25">
+        <p style="font-size:12px; color:#999; margin:0; padding:0;">
+            <a href="https://beian.miit.gov.cn/" target="_blank" style="color:#999; text-decoration:none;">
+                晋ICP备2026000124号-1
+            </a> | 个人非盈利技术站点，无商业内容
+        </p>
     </div>
+    {{ else }}
+    <div class="col-md-4 text-center mt25">
+        <p style="font-size:12px; color:#999; margin:0; padding:0;">
+            个人非盈利技术站点 | 仅限技术学习与记录
+        </p>
+    </div>
+    {{ end }}
+    {{with  .Site.Params.orcid }}
+    <div class="col-md-4 text-center mt25">
+        <a
+                id="cy-effective-orcid-url"
+                class="underline"
+                href="https://orcid.org/{{.}}"
+                target="orcid.widget"
+                rel="me noopener noreferrer"
+                style="vertical-align: top">
+            <img
+                    src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+                    style="width: 1em; margin-inline-start: 0.5em"
+                    alt="ORCID iD icon"/>
+            https://orcid.org/{{.}}
+        </a>
+    </div>
+    {{ end }}
 </footer>
